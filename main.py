@@ -10,7 +10,7 @@ LEARN_RATE = 0.2   # learning rate
 
 torch.random.manual_seed(1729)
 
-# knlist and k0list are integers, so the wavesum is periodic
+# knlist and k0list are integers, so the splotch functions are periodic
 knlist = torch.randint(-2, 3, (DIMS, WSUM, DIMS)) # wavenumbers : list (controlling dim, wave id, k component)
 k0list = torch.randint(-2, 3, (DIMS, WSUM))       # the x0 component of wavenumber : list (controlling dim, wave id)
 slist = torch.randn((DIMS, WSUM))                # sin coefficients for a particular wave : list(controlling dim, wave id)
